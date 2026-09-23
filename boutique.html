@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Breaking Glass - Boutique</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <nav aria-label="Primary navigation">
+                <a class="site-logo" href="index.html" aria-label="Accueil Breaking Glass">
+                    <img src="images/logo_bk_glass.png" alt="Breaking Glass">
+                    <span class="site-name">Breaking Glass</span>
+                </a>
+                <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="navMenu" aria-label="Open navigation menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="connexion.html">Connexion</a></li>
+                    <li><a href="actualites.html">Actualités</a></li>
+                    <li><a href="boutique.html">Boutique</a></li>
+                    <li><a href="about.html">A propos</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="shop-page">
+            <section class="shop-intro" aria-labelledby="shop-title">
+                <p class="eyebrow">La collection Breaking Glass</p>
+                <h1 id="shop-title">Bienvenue dans la boutique de Breaking Glass</h1>
+                <p class="shop-lead">Découvrez nos verres à boire cassés à des prix imbattables.</p>
+            </section>
+
+            <div class="shop-filters" role="group" aria-label="Filtrer les collections">
+                <button class="filter-btn is-active" type="button" data-filter="all" aria-pressed="true">Tous les verres</button>
+                <button class="filter-btn" type="button" data-filter="amber" aria-pressed="false">Les Tchin-Tchin Tragiques</button>
+                <button class="filter-btn" type="button" data-filter="smoke" aria-pressed="false">Les Culbutes Fumées</button>
+                <button class="filter-btn" type="button" data-filter="clay" aria-pressed="false">Les Santé Brisées</button>
+            </div>
+
+            <section class="product-grid" aria-label="Collection de produits">
+                <article class="product-card product-card--amber" data-collection="amber">
+                    <div class="product-art" aria-hidden="true"><span></span></div>
+                    <div class="product-info">
+                        <p class="product-category">Les Tchin-Tchin Tragiques</p>
+                        <h2>Le Grand Éclat</h2>
+                        <p>Un tumbler ambré qui a connu une soirée mouvementée.</p>
+                        <a class="product-link" href="commande.html?collection=amber">Voir la boutique</a>
+                    </div>
+                </article>
+
+                <article class="product-card product-card--smoke" data-collection="smoke">
+                    <div class="product-art" aria-hidden="true"><span></span></div>
+                    <div class="product-info">
+                        <p class="product-category">Les Culbutes Fumées</p>
+                        <h2>Le Culbuto</h2>
+                        <p>Un verre fumé aux transparences douces, tombé avec panache.</p>
+                        <a class="product-link" href="commande.html?collection=smoke">Voir la boutique</a>
+                    </div>
+                </article>
+
+                <article class="product-card product-card--clay" data-collection="clay">
+                    <div class="product-art" aria-hidden="true"><span></span></div>
+                    <div class="product-info">
+                        <p class="product-category">Les Santé Brisées</p>
+                        <h2>Le Survivant</h2>
+                        <p>Un verre brut marqué par ses irrégularités et son grand courage.</p>
+                        <a class="product-link" href="commande.html?collection=clay">Voir la boutique</a>
+                    </div>
+                </article>
+            </section>
+        </main>
+
+        <script>
+            const menuBtn = document.getElementById('menuBtn');
+            const navMenu = document.getElementById('navMenu');
+
+            const closeMenu = () => {
+                navMenu.classList.remove('active');
+                menuBtn.setAttribute('aria-expanded', 'false');
+                menuBtn.setAttribute('aria-label', 'Open navigation menu');
+            };
+
+            menuBtn.addEventListener('click', () => {
+                const isOpen = navMenu.classList.toggle('active');
+                menuBtn.setAttribute('aria-expanded', String(isOpen));
+                menuBtn.setAttribute('aria-label', isOpen ? 'Close navigation menu' : 'Open navigation menu');
+            });
+
+            document.addEventListener('click', (event) => {
+                if (!event.target.closest('nav')) {
+                    closeMenu();
+                }
+            });
+
+            document.addEventListener('keydown', (event) => {
+                if (event.key === 'Escape') {
+                    closeMenu();
+                    menuBtn.focus();
+                }
+            });
+
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const productCards = document.querySelectorAll('.product-card');
+            const initialFilter = new URLSearchParams(window.location.search).get('collection');
+
+            const selectFilter = (selectedFilter) => {
+                const selectedButton = [...filterButtons].find((button) => button.dataset.filter === selectedFilter) || filterButtons[0];
+
+                filterButtons.forEach((filterButton) => {
+                    const isSelected = filterButton === selectedButton;
+                    filterButton.classList.toggle('is-active', isSelected);
+                    filterButton.setAttribute('aria-pressed', String(isSelected));
+                });
+
+                productCards.forEach((card) => {
+                    const shouldShow = selectedButton.dataset.filter === 'all' || card.dataset.collection === selectedButton.dataset.filter;
+                    card.classList.toggle('is-hidden', !shouldShow);
+                });
+            };
+
+            filterButtons.forEach((button) => {
+                button.addEventListener('click', () => {
+                    selectFilter(button.dataset.filter);
+                });
+            });
+
+            selectFilter(initialFilter);
+        </script>
+    </body>
+</html>
