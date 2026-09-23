@@ -11,7 +11,7 @@
             require_once __DIR__ .'/includes/header.php';
         ?>
 
-        <main class="login-container">
+        <center><main class="login-container">
         <div class="login-box">
                 <h1>Connexion</h1>
                 <p class="subtitle">
@@ -39,7 +39,7 @@
                     <button type="submit"> Se connecter </button> 
                 </form>
             </div>
-        </main>
+        </main></center>
 
         <script>
             const menuBtn = document.getElementById('menuBtn');
