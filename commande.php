@@ -33,7 +33,8 @@
 
             <section class="catalog-grid" id="catalogGrid" aria-label="Verres disponibles"></section>
         </main>
-
+    </body>
+</html>
         <script>
             const collections = {
                 amber: {
@@ -148,30 +149,3 @@
                 });
             });
 
-            const menuBtn = document.getElementById('menuBtn');
-            const navMenu = document.getElementById('navMenu');
-            const closeMenu = () => {
-                navMenu.classList.remove('active');
-                menuBtn.setAttribute('aria-expanded', 'false');
-                menuBtn.setAttribute('aria-label', 'Ouvrir le menu');
-            };
-
-            menuBtn.addEventListener('click', () => {
-                const isOpen = navMenu.classList.toggle('active');
-                menuBtn.setAttribute('aria-expanded', String(isOpen));
-                menuBtn.setAttribute('aria-label', isOpen ? 'Fermer le menu' : 'Ouvrir le menu');
-            });
-
-            document.addEventListener('click', (event) => {
-                if (!event.target.closest('nav')) closeMenu();
-            });
-
-            document.addEventListener('keydown', (event) => {
-                if (event.key === 'Escape') {
-                    closeMenu();
-                    menuBtn.focus();
-                }
-            });
-        </script>
-    </body>
-</html>
