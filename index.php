@@ -12,7 +12,15 @@
         ?>
 
         <main>
-            Bienvenue dans le site de Breaking Glass, une entreprise spécialisée dans la vente de verre cassée à des prix cassés !
+            <center>
+                <h4>
+                    Bienvenue dans le site de Breaking Glass, une entreprise spécialisée dans la vente de verre cassée à des prix cassés !
+                </h4>
+            </center>
+            <div class="sponso">
+                    <img class="photofl" src="/images/flvvvfr.png" alt="franck" class="fl">
+                    <img class="photocar" src="/images/carglass.png" alt="Carglass" class="car">
+            </div>
         </main>
 
         <script>

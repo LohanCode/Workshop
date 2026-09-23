@@ -1003,3 +1003,21 @@ color: #9ca3af;
 font-size: 14px;
 
 }
+
+.sponso {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.sponso img {
+    height: auto;
+}
+
+.sponso img:first-child {
+    width: 800px;
+}
+
+.sponso img:last-child {
+    width: 800px;
+}
