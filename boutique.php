@@ -4,13 +4,12 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Breaking Glass - Boutique</title>
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="/styles/styles.css">
     </head>
     <body>
         <?php
             require_once __DIR__ .'/includes/header.php';
         ?>
-
         <main class="shop-page">
             <section class="shop-intro" aria-labelledby="shop-title">
                 <p class="eyebrow">La collection Breaking Glass</p>
@@ -18,41 +17,40 @@
                 <p class="shop-lead">Découvrez nos verres à boire cassés à des prix imbattables.</p>
             </section>
 
-            <div class="shop-filters" role="group" aria-label="Filtrer les collections">
-                <button class="filter-btn is-active" type="button" data-filter="all" aria-pressed="true">Tous les verres</button>
-                <button class="filter-btn" type="button" data-filter="amber" aria-pressed="false">Les Tchin-Tchin Tragiques</button>
-                <button class="filter-btn" type="button" data-filter="smoke" aria-pressed="false">Les Culbutes Fumées</button>
-                <button class="filter-btn" type="button" data-filter="clay" aria-pressed="false">Les Santé Brisées</button>
-            </div>
-
             <section class="product-grid" aria-label="Collection de produits">
                 <article class="product-card product-card--amber" data-collection="amber">
-                    <div class="product-art" aria-hidden="true"><span></span></div>
+                    <div class="product-art">
+                        <img class="collection-photo" src="images/Ambre_eclate.jpg" alt="Verre ambré éclaté">
+                    </div>
                     <div class="product-info">
                         <p class="product-category">Les Tchin-Tchin Tragiques</p>
                         <h2>Le Grand Éclat</h2>
                         <p>Un tumbler ambré qui a connu une soirée mouvementée.</p>
-                        <a class="product-link" href="commande.html?collection=amber">Voir la boutique</a>
+                        <a class="product-link" href="commande.php?collection=amber">Voir la boutique</a>
                     </div>
                 </article>
 
                 <article class="product-card product-card--smoke" data-collection="smoke">
-                    <div class="product-art" aria-hidden="true"><span></span></div>
+                    <div class="product-art">
+                        <img class="collection-photo" src="images/Halo_brise.jpg" alt="Verre fumé cassé">
+                    </div>
                     <div class="product-info">
                         <p class="product-category">Les Culbutes Fumées</p>
                         <h2>Le Culbuto</h2>
                         <p>Un verre fumé aux transparences douces, tombé avec panache.</p>
-                        <a class="product-link" href="commande.html?collection=smoke">Voir la boutique</a>
+                        <a class="product-link" href="commande.php?collection=smoke">Voir la boutique</a>
                     </div>
                 </article>
 
                 <article class="product-card product-card--clay" data-collection="clay">
-                    <div class="product-art" aria-hidden="true"><span></span></div>
+                    <div class="product-art">
+                        <img class="collection-photo" src="images/Basalte_ebreche.jpg" alt="Verre brut ébréché">
+                    </div>
                     <div class="product-info">
                         <p class="product-category">Les Santé Brisées</p>
                         <h2>Le Survivant</h2>
                         <p>Un verre brut marqué par ses irrégularités et son grand courage.</p>
-                        <a class="product-link" href="commande.html?collection=clay">Voir la boutique</a>
+                        <a class="product-link" href="commande.php?collection=clay">Voir la boutique</a>
                     </div>
                 </article>
             </section>
@@ -87,32 +85,7 @@
                 }
             });
 
-            const filterButtons = document.querySelectorAll('.filter-btn');
-            const productCards = document.querySelectorAll('.product-card');
-            const initialFilter = new URLSearchParams(window.location.search).get('collection');
-
-            const selectFilter = (selectedFilter) => {
-                const selectedButton = [...filterButtons].find((button) => button.dataset.filter === selectedFilter) || filterButtons[0];
-
-                filterButtons.forEach((filterButton) => {
-                    const isSelected = filterButton === selectedButton;
-                    filterButton.classList.toggle('is-active', isSelected);
-                    filterButton.setAttribute('aria-pressed', String(isSelected));
-                });
-
-                productCards.forEach((card) => {
-                    const shouldShow = selectedButton.dataset.filter === 'all' || card.dataset.collection === selectedButton.dataset.filter;
-                    card.classList.toggle('is-hidden', !shouldShow);
-                });
-            };
-
-            filterButtons.forEach((button) => {
-                button.addEventListener('click', () => {
-                    selectFilter(button.dataset.filter);
-                });
-            });
-
-            selectFilter(initialFilter);
         </script>
+
     </body>
 </html>
