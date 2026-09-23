@@ -599,7 +599,6 @@ body > br {
 
 .catalog-filters {
     display: flex;
-    flex-wrap: wrap;
     gap: 10px;
     margin-bottom: 28px;
 }
@@ -705,12 +704,17 @@ body > br {
 }
 
 .catalog-footer strong {
+    flex: 0 0 38px;
     color: var(--espresso);
     font-family: Arial, sans-serif;
     font-size: 18px;
+    line-height: 1;
+    white-space: nowrap;
 }
 
 .catalog-footer button {
+    flex: 1 1 auto;
+    min-width: 0;
     padding: 10px 12px;
     border: 1px solid var(--stone);
     color: var(--stone);
