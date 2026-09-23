@@ -12,11 +12,12 @@
         require_once __DIR__ .'/includes/header.php';
     ?>
 
+        <main class="actualites-page">
         <h1>Actualités</h1>
         <p>Découvrez nos dernières actualités et mises à jour.</p>
         <section class="product-grid" aria-label="Collection de produits">
-                <article class="product-card product-card--amber" data-collection="amber">
-                    <div class="product-art" aria-hidden="true"><span></span></div>
+                    <article class="product-card product-card--amber actualite-card actualite-card--featured" data-collection="amber">
+                    <img src="/images/actualite_01.png" alt="Image d'un verre cassé" class="product-image">
                     <div class="product-info">
                         <h3>Breaking Glass lance son premier verre déjà cassé à 100%</h3>
                         <p class="date">22 septembre 2026</p>
@@ -30,6 +31,7 @@
                 </article>
 
                 <article class="product-card product-card--amber" data-collection="amber">
+                    <img src="/images/actualite_02.png" alt="Image d'un verre cassé" class="product-image">
                     <div class="product-art" aria-hidden="true"><span></span></div>
                     <div class="product-info">
                         <h3>Les ventes de verres cassés explosent après une soirée particulièrement réussie</h3>
@@ -43,6 +45,7 @@
                     </div>
                 </article>
                 <article class="product-card product-card--amber" data-collection="amber">
+                    <img src="/images/actualite_03.png" alt="Image d'un verre cassé" class="product-image">
                     <div class="product-art" aria-hidden="true"><span></span></div>
                     <div class="product-info">
                         <h3>Nos scientifiques découvrent qu'un verre cassé reste...cassé</h3>
@@ -58,6 +61,7 @@
                 </article>
 
                 <article class="product-card product-card--amber" data-collection="amber">
+                    <img src="/images/actualite_04.png" alt="Image d'un verre cassé" class="product-image">
                     <div class="product-art" aria-hidden="true"><span></span></div>
                     <div class="product-info">
                         <h3>Collection limitée : les verres "Encore Plus Cassés" arrivent</h3>
@@ -75,6 +79,7 @@
                 </article>
 
                 <article class="product-card product-card--amber" data-collection="amber">
+                    <img src="/images/actualite_05.png" alt="Image d'un verre cassé" class="product-image">
                     <div class="product-art" aria-hidden="true"><span></span></div>
                     <div class="product-info">
                         <h3>Rupture de stock exceptionnelle : le verre entier</h3>
@@ -91,6 +96,7 @@
                 </article>
 
                 <article class="product-card product-card--amber" data-collection="amber">
+                    <img src="/images/actualite_06.png" alt="Image d'un verre cassé" class="product-image">
                     <div class="product-art" aria-hidden="true"><span></span></div>
                     <div class="product-info">
                         <h3>Breaking Glass devient officiellement partenaire du recyclage</h3>
@@ -106,6 +112,7 @@
                 </article>
 
                 <article class="product-card product-card--amber" data-collection="amber">
+                    <img src="/images/actualite_07.png" alt="Image d'un verre cassé" class="product-image">
                     <div class="product-art" aria-hidden="true"><span></span></div>
                     <div class="product-info">
                         <h3>Un chef étoilé recommande nos verres cassés</h3>
@@ -120,6 +127,7 @@
                 </article>
 
                 <article class="product-card product-card--amber" data-collection="amber">
+                    <img src="/images/actualite_08.png" alt="Image d'un verre cassé" class="product-image">
                     <div class="product-art" aria-hidden="true"><span></span></div>
                     <div class="product-info">
                         <h3>Breaking Glass présente le verre "Déjà Tombé"</h3>
@@ -135,6 +143,7 @@
                 </article>
 
                 <article class="product-card product-card--amber" data-collection="amber">
+                    <img src="/images/actualite_09.png" alt="Image d'un verre cassé" class="product-image">
                     <div class="product-art" aria-hidden="true"><span></span></div>
                     <div class="product-info">
                         <h3>Une étude confirme que 100% de nos verres sont cassables</h3>
@@ -151,6 +160,7 @@
                 </article>
 
                 <article class="product-card product-card--amber" data-collection="amber">
+                    <img src="/images/actualite_10.png" alt="Image d'un verre cassé" class="product-image">
                     <div class="product-art" aria-hidden="true"><span></span></div>
                     <div class="product-info">
                         <h3>Livraison express : votre verre cassé arrive désormais encore plus cassé</h3>
@@ -166,6 +176,7 @@
                 </article>
 
                 <article class="product-card product-card--amber" data-collection="amber">
+                    <img src="/images/actualite_11.png" alt="Image d'un verre cassé" class="product-image">
                     <div class="product-art" aria-hidden="true"><span></span></div>
                     <div class="product-info">
                         <h3>Nouveau record mondial : 47 verres cassés en 8 minutes</h3>
@@ -181,6 +192,7 @@
                 </article>
 
                 <article class="product-card product-card--amber" data-collection="amber">
+                    <img src="/images/actualite_12.png" alt="Image d'un verre cassé" class="product-image">
                     <div class="product-art" aria-hidden="true"><span></span></div>
                     <div class="product-info">
                         <h3>Nos chercheurs inventent le verre qui casse quand on le regarde</h3>
@@ -199,6 +211,7 @@
                 </article>
 
                 <article class="product-card product-card--amber" data-collection="amber">
+                    <img src="/images/actualite_13.png" alt="Image d'un verre cassé" class="product-image">
                     <div class="product-art" aria-hidden="true"><span></span></div>
                     <div class="product-info">
                         <h3>Breaking Glass augmente ses prix pour améliorer la qualité de la casse</h3>
@@ -214,6 +227,7 @@
                 </article>
 
                 <article class="product-card product-card--amber" data-collection="amber">
+                    <img src="/images/actualite_14.png" alt="Image d'un verre cassé" class="product-image">
                     <div class="product-art" aria-hidden="true"><span></span></div>
                     <div class="product-info">
                         <h3>Notre boutique ouvre son rayon "presque entier"</h3>
@@ -233,6 +247,7 @@
                 </article>
 
                 <article class="product-card product-card--amber" data-collection="amber">
+                    <img src="/images/actualite_15.png" alt="Image d'un verre cassé" class="product-image">
                     <div class="product-art" aria-hidden="true"><span></span></div>
                     <div class="product-info">
                         <h3>Un client commande un verre cassé et demande un remboursement</h3>
@@ -251,6 +266,7 @@
                 </article>
 
                 <article class="product-card product-card--amber" data-collection="amber">
+                    <img src="/images/actualite_16.png" alt="Image d'un verre cassé" class="product-image">
                     <div class="product-art" aria-hidden="true"><span></span></div>
                     <div class="product-info">
                         <h3>Les avis clients explosent sur notre nouveau modèle</h3>
@@ -278,6 +294,7 @@
                 </article>
 
                 <article class="product-card product-card--amber" data-collection="amber">
+                    <img src="/images/actualite_17.png" alt="Image d'un verre cassé" class="product-image">
                     <div class="product-art" aria-hidden="true"><span></span></div>
                     <div class="product-info">
                         <h3>Breaking Glass recrute un spécialiste de la casse</h3>
@@ -295,6 +312,7 @@
                 </article>
 
                 <article class="product-card product-card--amber" data-collection="amber">
+                    <img src="/images/actualite_18.png" alt="Image d'un verre cassé" class="product-image">
                     <div class="product-art" aria-hidden="true"><span></span></div>
                     <div class="product-info">
                         <h3>Une intelligence artificielle tente de réparer nos verres</h3>
@@ -305,7 +323,7 @@
                             <br>
                             Résultat après 6 heures:<br>
                             <br>
-                            "Je opense qu'il est encore plus cassé qu'avant"<br>
+                            "Je pense qu'il est encore plus cassé qu'avant"<br>
                             <br>
                             Le projet est considéré comme un succès
                         </p>
@@ -313,6 +331,7 @@
                 </article>
 
                 <article class="product-card product-card--amber" data-collection="amber">
+                    <img src="/images/actualite_19.png" alt="Image d'un verre cassé" class="product-image">
                     <div class="product-art" aria-hidden="true"><span></span></div>
                     <div class="product-info">
                         <h3>Breaking Glass fête son premier million de morceaux de verre vendus</h3>
@@ -330,6 +349,7 @@
                 </article>
 
                 <article class="product-card product-card--amber" data-collection="amber">
+                    <img src="/images/actualite_20.png" alt="Image d'un verre cassé" class="product-image">
                     <div class="product-art" aria-hidden="true"><span></span></div>
                     <div class="product-info">
                         <h3>Incident ! Un verre presque intact retrouvé dans l'entrepôt</h3>
@@ -348,6 +368,7 @@
                 </article>
 
                 <article class="product-card product-card--amber" data-collection="amber">
+                    <img src="/images/actualite_21.png" alt="Image d'un verre cassé" class="product-image">
                     <div class="product-art" aria-hidden="true"><span></span></div>
                     <div class="product-info">
                         <h3>Breaking Glass lance son programme fidélité "Casse & Gagne"</h3>
@@ -363,6 +384,9 @@
                         </p>
                     </div>
                 </article>
+
+        </section>
+        </main>
 
                 <script>
             const menuBtn = document.getElementById('menuBtn');
