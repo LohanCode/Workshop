@@ -1367,3 +1367,62 @@ footer {
     color: #a85d2a;
     text-decoration: underline;
 }
+<<<<<<< HEAD
+=======
+
+.politique {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 0 30px;
+    line-height: 1.7;
+}
+
+.politique h1 {
+    text-align: center;
+    color: #5b321f;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.politique .date {
+    text-align: center;
+    color: #777;
+    margin-bottom: 50px;
+}
+
+.politique section {
+    margin-bottom: 45px;
+}
+
+.politique h2 {
+    color: #5b321f;
+    font-size: 27px;
+    margin-bottom: 15px;
+}
+
+.politique h3 {
+    color: #70452f;
+    font-size: 21px;
+    margin-top: 25px;
+}
+
+.politique p {
+    font-size: 17px;
+}
+
+.politique ul {
+    padding-left: 25px;
+}
+
+.politique li {
+    margin-bottom: 8px;
+}
+
+.politique a {
+    color: #70452f;
+}
+
+.politique a:hover {
+    color: #a85d2a;
+}
+>>>>>>> a0bb4506a61ae0e60ef9c6916096606144c62842

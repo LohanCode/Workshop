@@ -14,6 +14,7 @@
                 <li><a href="actualites.php">Actualités</a></li>
                 <li><a href="boutique.php">Boutique</a></li>
                 <li><a href="about.php">À propos</a></li>
+                <li><a href="confidentialite.php">Politique de confidentialité</a></li>
             </ul>
         </div>
     </div>
