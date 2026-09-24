@@ -105,7 +105,7 @@ $collectionNames = [
                     <?php endforeach; ?>
                 </section> </center>
                 <section class="benefits-strip" aria-labelledby="why-choose-title">
-                    <h1 class="marketing-heading" id="why-choose-title">✨ POURQUOI NOUS CHOISIR ?</h1>
+                    <h1 class="marketing-heading" id="why-choose-title">POURQUOI NOUS CHOISIR ?</h1>
                     <div class="benefits-list">
                         <p>Qualité</p>
                         <p>Prix</p>
