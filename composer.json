@@ -1,5 +1,7 @@
 {
     "require": {
+        "php": ">=8.2",
+        "ext-pdo_pgsql": "*",
         "vlucas/phpdotenv": "^5.7"
     }
 }

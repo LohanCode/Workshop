@@ -1,2 +1,0 @@
-[phases.setup]
-nixPackages = ["php83", "php83Extensions.pdo_pgsql"]
