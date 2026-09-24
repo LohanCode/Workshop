@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap');
+
 :root {
     --espresso: #100b09;
     --cream: #fbfaf8;
@@ -10,6 +12,7 @@
     --ochre: #cd7d2b;
     --gradient-warm: linear-gradient(110deg, #5a301d 0%, #9c7054 42%, #cd7d2b 100%);
     --gradient-surface: linear-gradient(135deg, #fffdfa 0%, #f8f1eb 42%, #ead8c9 100%);
+    --font-luxury: 'Lora', 'Bodoni 72', Didot, Georgia, serif;
     --line: rgba(16, 11, 9, .16);
 }
 
@@ -34,7 +37,7 @@ body {
         var(--gradient-surface);
     background-attachment: fixed;
     background-color: var(--cream);
-    font-family: Georgia, 'Times New Roman', serif;
+    font-family: var(--font-luxury);
 }
 
 .marketing-heading {
@@ -122,7 +125,7 @@ nav .site-logo {
     position: relative;
     padding-bottom: 5px;
     color: var(--chocolate);
-    font-family: Didot, 'Bodoni 72', Georgia, serif;
+    font-family: var(--font-luxury);
     font-size: clamp(22px, 2.5vw, 31px);
     font-weight: 700;
     letter-spacing: .015em;
@@ -230,7 +233,7 @@ nav .site-logo {
     display: block;
     padding: 17px 0;
     color: var(--espresso);
-    font-family: Arial, sans-serif;
+    font-family: var(--font-luxury);
     font-size: 12px;
     font-weight: 700;
     letter-spacing: .12em;
@@ -293,7 +296,7 @@ body > br {
     max-width: 920px;
     margin: 0;
     color: var(--chocolate);
-    font-family: Didot, 'Bodoni 72', Georgia, serif;
+    font-family: var(--font-luxury);
     font-size: clamp(27px, 4vw, 52px);
     font-weight: 700;
     letter-spacing: .01em;
@@ -304,7 +307,7 @@ body > br {
     display: inline-block;
     margin-top: 18px;
     color: var(--chocolate);
-    font-family: Arial, sans-serif;
+    font-family: var(--font-luxury);
     font-size: clamp(13px, 1.5vw, 16px);
     font-weight: 700;
     letter-spacing: .12em;
@@ -348,16 +351,16 @@ body > br {
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-family: Arial, sans-serif;
-    font-size: 12px;
-    letter-spacing: .16em;
+    font-family: var(--font-luxury);
+    font-size: 15px;
+    letter-spacing: .04em;
     line-height: 1.3;
     text-align: center;
     text-transform: uppercase;
 }
 
 .benefits-strip .marketing-heading::before {
-    content: '✦';
+    content: '\2726';
     margin-right: 10px;
     color: var(--ochre);
     -webkit-text-fill-color: var(--ochre);
@@ -370,7 +373,7 @@ body > br {
 .benefits-intro {
     margin: 0 auto 28px;
     color: rgba(251, 250, 248, .68);
-    font-family: Arial, sans-serif;
+    font-family: var(--font-luxury);
     font-size: 12px;
     text-align: center;
 }
@@ -389,10 +392,10 @@ body > br {
     max-width: 220px;
     margin: 0;
     color: var(--cream);
-    font-family: Arial, sans-serif;
-    font-size: 12px;
+    font-family: var(--font-luxury);
+    font-size: 14px;
     font-weight: 700;
-    letter-spacing: .08em;
+    letter-spacing: .03em;
     text-align: center;
     text-transform: uppercase;
 }
@@ -416,7 +419,7 @@ body > br {
 .product-category {
     margin: 0 0 14px;
     color: var(--caramel);
-    font-family: Arial, sans-serif;
+    font-family: var(--font-luxury);
     font-size: 11px;
     font-weight: 700;
     letter-spacing: .18em;
@@ -431,7 +434,7 @@ body > br {
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-family: Didot, 'Bodoni 72', Georgia, serif;
+    font-family: var(--font-luxury);
     font-size: clamp(42px, 6vw, 76px);
     font-weight: 700;
     letter-spacing: .01em;
@@ -507,7 +510,7 @@ body > br {
     border-left: 3px solid #a33b2b;
     color: #7e281d;
     background: rgba(163, 59, 43, .1);
-    font-family: Arial, sans-serif;
+    font-family: var(--font-luxury);
     font-size: 13px;
     line-height: 1.4;
 }
@@ -626,7 +629,7 @@ body > br {
 .product-info h2 {
     margin: 0;
     color: var(--chocolate);
-    font-family: Didot, 'Bodoni 72', Georgia, serif;
+    font-family: var(--font-luxury);
     font-size: 28px;
     line-height: 1;
 }
@@ -642,7 +645,7 @@ body > br {
     display: inline-block;
     margin-top: 22px;
     color: var(--chocolate);
-    font-family: Arial, sans-serif;
+    font-family: var(--font-luxury);
     font-size: 11px;
     font-weight: 700;
     letter-spacing: .1em;
@@ -652,7 +655,7 @@ body > br {
 
 .product-link::after,
 .back-link::after {
-    content: '  →';
+    content: '  \2192';
     color: var(--caramel);
 }
 
@@ -678,7 +681,7 @@ body > br {
 .gallery-intro h1 {
     margin: 0;
     color: var(--chocolate);
-    font-family: Didot, 'Bodoni 72', Georgia, serif;
+    font-family: var(--font-luxury);
     font-size: clamp(48px, 8vw, 92px);
     letter-spacing: -.035em;
     line-height: .9;
@@ -702,7 +705,7 @@ body > br {
     border: 1px solid rgba(185, 108, 27, .25);
     background: rgba(205, 125, 43, .09);
     color: var(--cocoa);
-    font-family: Arial, sans-serif;
+    font-family: var(--font-luxury);
     font-size: 12px;
     line-height: 1.5;
 }
@@ -723,7 +726,7 @@ body > br {
     border-radius: 999px;
     color: var(--cocoa);
     background: rgba(251, 250, 248, .7);
-    font-family: Arial, sans-serif;
+    font-family: var(--font-luxury);
     font-size: 11px;
     font-weight: 700;
     letter-spacing: .08em;
@@ -794,7 +797,7 @@ body > br {
 .catalog-info h2 {
     margin: 0;
     color: var(--chocolate);
-    font-family: Didot, 'Bodoni 72', Georgia, serif;
+    font-family: var(--font-luxury);
     font-size: clamp(28px, 4vw, 42px);
     line-height: .98;
 }
@@ -820,7 +823,7 @@ body > br {
 .catalog-footer strong {
     flex: 0 0 38px;
     color: var(--espresso);
-    font-family: Arial, sans-serif;
+    font-family: var(--font-luxury);
     font-size: 18px;
     line-height: 1;
     white-space: nowrap;
@@ -833,7 +836,7 @@ body > br {
     border: 1px solid var(--stone);
     color: var(--stone);
     background: transparent;
-    font-family: Arial, sans-serif;
+    font-family: var(--font-luxury);
     font-size: 10px;
     font-weight: 700;
     letter-spacing: .06em;
@@ -854,7 +857,7 @@ body > br {
     border: 1px solid var(--espresso);
     color: var(--cream);
     background: var(--espresso);
-    font-family: Arial, sans-serif;
+    font-family: var(--font-luxury);
     font-size: 11px;
     font-weight: 700;
     letter-spacing: .06em;
@@ -888,7 +891,7 @@ body > br {
 .confirmation-page h1 {
     margin: 0 0 28px;
     color: var(--chocolate);
-    font-family: Didot, 'Bodoni 72', Georgia, serif;
+    font-family: var(--font-luxury);
     font-size: clamp(44px, 7vw, 76px);
     line-height: .95;
 }
@@ -936,7 +939,7 @@ body > br {
 
 .cart-item > strong,
 .cart-total strong {
-    font-family: Arial, sans-serif;
+    font-family: var(--font-luxury);
     white-space: nowrap;
 }
 
@@ -945,7 +948,7 @@ body > br {
     flex-wrap: wrap;
     gap: 8px;
     align-items: center;
-    font-family: Arial, sans-serif;
+    font-family: var(--font-luxury);
     font-size: 12px;
 }
 
@@ -976,7 +979,7 @@ body > br {
     margin: 25px 0;
     padding-top: 18px;
     border-top: 1px solid var(--line);
-    font-family: Arial, sans-serif;
+    font-family: var(--font-luxury);
     font-size: 18px;
 }
 
@@ -987,7 +990,7 @@ body > br {
     padding: 26px;
     border: 1px solid var(--line);
     background: rgba(251, 250, 248, .78);
-    font-family: Arial, sans-serif;
+    font-family: var(--font-luxury);
 }
 
 .demo-payment-form input[type="text"],
@@ -1016,7 +1019,7 @@ body > br {
 }
 
 .confirmation-total {
-    font-family: Arial, sans-serif;
+    font-family: var(--font-luxury);
 }
 
 @media (max-width: 620px) {
@@ -1307,7 +1310,7 @@ button {
 
 .shop-page h4 {
     color: var(--chocolate);
-    font-family: Didot, 'Bodoni 72', Georgia, serif;
+    font-family: var(--font-luxury);
     font-size: clamp(22px, 2.5vw, 31px);
     font-weight: 700;
     letter-spacing: .015em;
