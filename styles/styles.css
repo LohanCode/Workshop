@@ -248,9 +248,9 @@ body > br {
 }
 
 .shop-page {
-    width: min(1180px, calc(100% - 44px));
-    margin: 0 auto;
-    padding: clamp(64px, 9vw, 112px) 0 90px;
+    width: 100%;
+    max-width: 1200px;
+    padding: 64px;
 }
 
 .shop-intro {
