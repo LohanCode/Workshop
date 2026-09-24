@@ -13,8 +13,10 @@
     ?>
 
         <main class="actualites-page">
-        <h1>Actualités</h1>
-        <p>Découvrez nos dernières actualités et mises à jour.</p>
+            <section class="shop-intro" aria-labelledby="shop-title">
+                <h1 id="shop-title">Actualités</h1>
+                <p class="shop-lead">Découvrez nos dernières actualités et mises à jour.</p>
+            </section>
         <section class="product-grid" aria-label="Collection de produits">
                     <article class="product-card product-card--amber actualite-card actualite-card--featured" data-collection="amber">
                     <img src="/images/actualite_01.png" alt="Image d'un verre cassé" class="product-image">

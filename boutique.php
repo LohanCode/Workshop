@@ -10,6 +10,7 @@
         <?php
             require_once __DIR__ .'/includes/header.php';
         ?>
+        
         <main class="shop-page">
             <section class="shop-intro" aria-labelledby="shop-title">
                 <p class="eyebrow">La collection Breaking Glass</p>
