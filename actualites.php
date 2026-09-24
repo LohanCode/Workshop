@@ -207,7 +207,7 @@
                             Vous regardez le verre.<br>
                             Il se casse.<br>
                             <br>
-                            La technologie est actuellemebt en phase de test.
+                            La technologie est actuellement en phase de test.
                         </p>
                     </div>
                 </article>
