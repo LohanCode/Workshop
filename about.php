@@ -38,8 +38,13 @@
             <p>Pour cette année, voici nos partenaires qui ont décidé de se lancer dans le projet de la ventes de verres cassés.</p>
             <div class="sponso">
                     <img class="photofl" src="/images/flvvvfr.png" alt="franck" class="fl">
-                    <img class="photocar" src="/images/carglass.png" alt="Carglass" class="car">
-            </div>
+                    <img class="photocar" src="/images/cassglass.png" alt="Carglass" class="car">
+            </div><br>
+            <h4>Notre localisation</h4><br>
+            <center>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d512470.7932083782!2d165.82263683550647!3d-77.82171302166533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNzfCsDUwJzM1LjkiUyAxNjbCsDQxJzA4LjUiRQ!5e0!3m2!1sfr!2sfr!4v1790238840696!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            </center>
+
 
 
         </main>
