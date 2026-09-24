@@ -60,14 +60,18 @@ $collectionNames = [
                 </article>
                 </section>
                 </main>
-                <center>                <h1 class="marketing-heading">DES PRODUITS PENSÉS POUR VOUS</h1>
-                <p>Chez Breaking Glass, nous croyons que chaque verre a une histoire à raconter</p>
-                <p>⭐ Livraison rapide</p>
-                <p>🔒 Paiement sécurisé</p>
-                <p>↩ Retours faciles</p>
-                <p>📦 Expédition France</p>
+                <section class="benefits-strip" aria-labelledby="benefits-title">
+                    <h1 class="marketing-heading" id="benefits-title">DES PRODUITS PENSÉS POUR VOUS</h1>
+                    <p class="benefits-intro">Chez Breaking Glass, nous croyons que chaque verre a une histoire à raconter</p>
+                    <div class="benefits-list">
+                        <p>⭐ Livraison rapide</p>
+                        <p>🔒 Paiement sécurisé</p>
+                        <p>↩ Retours faciles</p>
+                        <p>📦 Expédition France</p>
+                    </div>
+                </section>
 
-                <h1 class="marketing-heading">NOS PRODUITS DU MOMENT</h1>
+               <center> <h1 class="marketing-heading">NOS PRODUITS DU MOMENT</h1>
                 <section class="featured-products" aria-label="Nos produits du moment">
                     <?php foreach ($featuredProducts as $product): ?>
                         <article class="catalog-card featured-product-card">
@@ -99,7 +103,15 @@ $collectionNames = [
                             </div>
                         </article>
                     <?php endforeach; ?>
-                </section></center>
+                </section> </center>
+                <section class="benefits-strip" aria-labelledby="why-choose-title">
+                    <h1 class="marketing-heading" id="why-choose-title">✨ POURQUOI NOUS CHOISIR ?</h1>
+                    <div class="benefits-list">
+                        <p>Qualité</p>
+                        <p>Prix</p>
+                        <p>Livraison</p>
+                    </div>
+                </section>
         </main>
 
         <?php
