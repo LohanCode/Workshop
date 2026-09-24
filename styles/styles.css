@@ -1344,3 +1344,27 @@ font-size: 14px;
     letter-spacing: .015em;
     line-height: 1;
 }
+
+.footer-colonnes {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.colonne {
+    text-align: center;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #ccc;
+}
+
+footer {
+    border-top: 1px solid #d6c8bc;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.08);
+    background-color: #f5eee8;
+    padding: 30px 50px 15px;
+}
