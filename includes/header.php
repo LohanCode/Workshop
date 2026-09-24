@@ -19,8 +19,8 @@ $isAuthenticated = isset($_SESSION['utilisateur']);
         </button>
         <ul class="nav-menu" id="navMenu">
             <?php if ($isAuthenticated): ?>
-                <li><a href="panier.php">Panier</a></li>
                 <li><a href="deconnexion.php">Déconnexion</a></li>
+                <li><a href="panier.php">Panier</a></li>
             <?php else: ?>
                 <li><a href="connexion.php">Connexion</a></li>
             <?php endif; ?>
