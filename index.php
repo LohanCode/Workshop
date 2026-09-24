@@ -37,14 +37,14 @@ $collectionNames = [
         ?>
 
         <main>
-            <center>
+            <section class="welcome-hero" aria-labelledby="welcome-title">
                 <h2>
                     Bienvenue sur le site de Breaking Glass !<br>
                     Découvrez nos verres à boire cassés à des prix CASSÉS.<br>
                     <a href="boutique.php">Accéder à la boutique</a>
                 </h2>
-            </center>
-            <h1>Notre nouvelle collection</h1>
+            </section>
+            <h1 class="marketing-heading">Notre nouvelle collection</h1>
             <main class="shop-page">
             <section class="shop-intro" aria-labelledby="shop-title">
             <article class="product-card product-card--clay product-card--survivant" data-collection="clay">
@@ -60,14 +60,14 @@ $collectionNames = [
                 </article>
                 </section>
                 </main>
-                <center><h1>DES PRODUITS PENSÉS POUR VOUS</h1>
+                <center>                <h1 class="marketing-heading">DES PRODUITS PENSÉS POUR VOUS</h1>
                 <p>Chez Breaking Glass, nous croyons que chaque verre a une histoire à raconter</p>
                 <p>⭐ Livraison rapide</p>
                 <p>🔒 Paiement sécurisé</p>
                 <p>↩ Retours faciles</p>
                 <p>📦 Expédition France</p>
 
-                <h1>NOS PRODUITS DU MOMENT</h1>
+                <h1 class="marketing-heading">NOS PRODUITS DU MOMENT</h1>
                 <section class="featured-products" aria-label="Nos produits du moment">
                     <?php foreach ($featuredProducts as $product): ?>
                         <article class="catalog-card featured-product-card">
