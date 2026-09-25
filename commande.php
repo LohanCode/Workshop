@@ -120,7 +120,7 @@ $collectionDescription = $selectedCollection['description']
                 <?php endforeach; ?>
             </section>
         </main>
-
+        <?php require_once __DIR__ . '/includes/footer.php'; ?>
         <script>
             const catalogFilters = document.querySelectorAll('.catalog-filter');
             const catalogCards = document.querySelectorAll('.catalog-card');

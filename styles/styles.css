@@ -994,11 +994,16 @@ body > br {
 }
 
 .demo-payment-form input[type="text"],
-.demo-payment-form input[type="email"] {
+.demo-payment-form input[type="email"],
+.demo-payment-form input[type="tel"],
+.demo-payment-form textarea {
     width: 100%;
     padding: 13px;
     border: 1px solid var(--stone);
     background: var(--cream);
+    color: var(--espresso);
+    font: inherit;
+    resize: vertical;
 }
 
 .checkbox-label {

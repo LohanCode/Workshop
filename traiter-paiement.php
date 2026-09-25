@@ -13,6 +13,16 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST' || empty($_POST['simulation_confirmee'
 }
 require_once __DIR__ . '/database.php';
 
+$address = trim((string) ($_POST['adresse_livraison'] ?? ''));
+$phone = preg_replace('/[\s.-]+/', '', (string) ($_POST['telephone_livraison'] ?? ''));
+
+if ($address === '' || mb_strlen($address) > 255 || $phone === null || !preg_match('/^0[1-9][0-9]{8}$/', $phone)) {
+    $_SESSION['erreur_paiement'] =
+        'Renseignez une adresse valide et un numéro de téléphone français à 10 chiffres.';
+    header('Location: paiement.php');
+    exit;
+}
+
 $cart = $_SESSION['panier'] ?? [];
 if (!is_array($cart) || $cart === []) {
     header('Location: panier.php');
@@ -64,14 +74,18 @@ try {
         $total += (int) $products[(string) $id]['prix_centimes'] * $quantity;
     }
     $order = $pdo->prepare(
-        'INSERT INTO commandes (utilisateur_id, total_centimes, statut, reference)
-         VALUES (:utilisateur_id, :total, :statut, :reference) RETURNING id'
+        'INSERT INTO commandes
+         (utilisateur_id, total_centimes, statut, reference, adresse_livraison, telephone_livraison)
+         VALUES (:utilisateur_id, :total, :statut, :reference, :adresse, :telephone)
+         RETURNING id'
     );
     $order->execute([
         'utilisateur_id' => $_SESSION['utilisateur']['id'],
         'total' => $total,
         'statut' => 'paye_simule',
         'reference' => 'BG-' . strtoupper(bin2hex(random_bytes(5))),
+        'adresse' => $address,
+        'telephone' => $phone,
     ]);
     $orderId = $order->fetchColumn();
     $line = $pdo->prepare(
