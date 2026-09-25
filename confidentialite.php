@@ -51,7 +51,7 @@
                 <li><strong>Nom / raison sociale :</strong> Breaking Glass</li>
                 <li><strong>Adresse :</strong> Antarctique</li>
                 <li><strong>E-mail :</strong> contact@breakingglass.com</li>
-                <li><strong>Téléphone :</strong> 06 71 83 07 12</li>
+                <li><strong>Téléphone :</strong> 06 80 14 52 42</li>
             </ul>
 
             <p>
